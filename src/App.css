@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Karla:wght@300&family=PT+Serif&family=Rubik:wght@300&family=Titillium+Web:wght@200&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: auto;
+  background-color:#182C61;
+  color: #ffffff;
+  font-family: 'Karla', sans-serif, bold;
+  font-size: x-large;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-div{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+}
+.main-div h1{
+  background-color: #82589F;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.question-ans{
+margin: 1rem;
+border: 1px solid black;
+padding: 0.5rem 2rem;
+background-color: #786fa6;
+border-radius: 15px;
+box-shadow: #82589F 0px 1px 3px 0px 3px 8px;
+}
+.question-ans:hover{
+  background-color: #786fa6a8;
+}
+.options{
+  margin: 1rem;
+}
+.sub-btn{
+  background-color: #82589F;
+  width: 30%;
+  text-align: center;
+  padding:1rem  0.5rem;
+  font-size: x-large;
+  align-items: center;
+  color: #ffffff;
+}
+.sub-btn:hover{
+  background-color: #097b5e;
+}
+.sub-btn-hold{
+  text-align: center;
+  margin: 1rem auto 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 495px){
+
+  body{
+    font-size: medium;
   }
-  to {
-    transform: rotate(360deg);
+  .sub-btn{
+    font-size: medium;
   }
+  .question-ans{
+    margin: 0.5rem;
+    border-radius: 10px;
+    }
+    h1{
+      font-size: x-large;
+    }
+
 }
